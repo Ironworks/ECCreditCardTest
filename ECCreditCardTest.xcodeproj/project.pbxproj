@@ -13,6 +13,9 @@
 		F00F26A41CBBB95E000D61AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A21CBBB95E000D61AF /* Main.storyboard */; };
 		F00F26A61CBBB95E000D61AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A51CBBB95E000D61AF /* Assets.xcassets */; };
 		F00F26A91CBBB95E000D61AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A71CBBB95E000D61AF /* LaunchScreen.storyboard */; };
+		F00F26BF1CBBBBE7000D61AF /* ECCreditCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26BE1CBBBBE7000D61AF /* ECCreditCardTests.m */; };
+		F00F26C31CBBBCA7000D61AF /* ECCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26C21CBBBCA7000D61AF /* ECCreditCard.m */; };
+		F00F26C41CBBBCA7000D61AF /* ECCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26C21CBBBCA7000D61AF /* ECCreditCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		F00F26AA1CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F00F26AF1CBBB95E000D61AF /* ECCreditCardTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECCreditCardTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00F26B51CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00F26BE1CBBBBE7000D61AF /* ECCreditCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECCreditCardTests.m; sourceTree = "<group>"; };
+		F00F26C11CBBBCA7000D61AF /* ECCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECCreditCard.h; sourceTree = "<group>"; };
+		F00F26C21CBBBCA7000D61AF /* ECCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECCreditCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		F00F26981CBBB95E000D61AF /* ECCreditCardTest */ = {
 			isa = PBXGroup;
 			children = (
+				F00F26C01CBBBC77000D61AF /* ECCreditCard */,
 				F00F269C1CBBB95E000D61AF /* AppDelegate.h */,
 				F00F269D1CBBB95E000D61AF /* AppDelegate.m */,
 				F00F269F1CBBB95E000D61AF /* ViewController.h */,
@@ -104,8 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				F00F26B51CBBB95E000D61AF /* Info.plist */,
+				F00F26BE1CBBBBE7000D61AF /* ECCreditCardTests.m */,
 			);
 			path = ECCreditCardTestTests;
+			sourceTree = "<group>";
+		};
+		F00F26C01CBBBC77000D61AF /* ECCreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				F00F26C11CBBBCA7000D61AF /* ECCreditCard.h */,
+				F00F26C21CBBBCA7000D61AF /* ECCreditCard.m */,
+			);
+			name = ECCreditCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +227,7 @@
 			files = (
 				F00F26A11CBBB95E000D61AF /* ViewController.m in Sources */,
 				F00F269E1CBBB95E000D61AF /* AppDelegate.m in Sources */,
+				F00F26C31CBBBCA7000D61AF /* ECCreditCard.m in Sources */,
 				F00F269B1CBBB95E000D61AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00F26C41CBBBCA7000D61AF /* ECCreditCard.m in Sources */,
+				F00F26BF1CBBBBE7000D61AF /* ECCreditCardTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
