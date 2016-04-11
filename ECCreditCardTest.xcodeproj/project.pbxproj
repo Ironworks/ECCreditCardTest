@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F00F269B1CBBB95E000D61AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F269A1CBBB95E000D61AF /* main.m */; };
+		F00F269E1CBBB95E000D61AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F269D1CBBB95E000D61AF /* AppDelegate.m */; };
+		F00F26A11CBBB95E000D61AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26A01CBBB95E000D61AF /* ViewController.m */; };
+		F00F26A41CBBB95E000D61AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A21CBBB95E000D61AF /* Main.storyboard */; };
+		F00F26A61CBBB95E000D61AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A51CBBB95E000D61AF /* Assets.xcassets */; };
+		F00F26A91CBBB95E000D61AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A71CBBB95E000D61AF /* LaunchScreen.storyboard */; };
+		F00F26B41CBBB95E000D61AF /* ECCreditCardTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F00F26B01CBBB95E000D61AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F00F268E1CBBB95E000D61AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F00F26951CBBB95E000D61AF;
+			remoteInfo = ECCreditCardTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F00F26961CBBB95E000D61AF /* ECCreditCardTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECCreditCardTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00F269A1CBBB95E000D61AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F00F269C1CBBB95E000D61AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F00F269D1CBBB95E000D61AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F00F269F1CBBB95E000D61AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F00F26A01CBBB95E000D61AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F00F26A31CBBB95E000D61AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F00F26A51CBBB95E000D61AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F00F26A81CBBB95E000D61AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F00F26AA1CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00F26AF1CBBB95E000D61AF /* ECCreditCardTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECCreditCardTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECCreditCardTestTests.m; sourceTree = "<group>"; };
+		F00F26B51CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F00F26931CBBB95E000D61AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00F26AC1CBBB95E000D61AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F00F268D1CBBB95E000D61AF = {
+			isa = PBXGroup;
+			children = (
+				F00F26981CBBB95E000D61AF /* ECCreditCardTest */,
+				F00F26B21CBBB95E000D61AF /* ECCreditCardTestTests */,
+				F00F26971CBBB95E000D61AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F00F26971CBBB95E000D61AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00F26961CBBB95E000D61AF /* ECCreditCardTest.app */,
+				F00F26AF1CBBB95E000D61AF /* ECCreditCardTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F00F26981CBBB95E000D61AF /* ECCreditCardTest */ = {
+			isa = PBXGroup;
+			children = (
+				F00F269C1CBBB95E000D61AF /* AppDelegate.h */,
+				F00F269D1CBBB95E000D61AF /* AppDelegate.m */,
+				F00F269F1CBBB95E000D61AF /* ViewController.h */,
+				F00F26A01CBBB95E000D61AF /* ViewController.m */,
+				F00F26A21CBBB95E000D61AF /* Main.storyboard */,
+				F00F26A51CBBB95E000D61AF /* Assets.xcassets */,
+				F00F26A71CBBB95E000D61AF /* LaunchScreen.storyboard */,
+				F00F26AA1CBBB95E000D61AF /* Info.plist */,
+				F00F26991CBBB95E000D61AF /* Supporting Files */,
+			);
+			path = ECCreditCardTest;
+			sourceTree = "<group>";
+		};
+		F00F26991CBBB95E000D61AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00F269A1CBBB95E000D61AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F00F26B21CBBB95E000D61AF /* ECCreditCardTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */,
+				F00F26B51CBBB95E000D61AF /* Info.plist */,
+			);
+			path = ECCreditCardTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F00F26951CBBB95E000D61AF /* ECCreditCardTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00F26B81CBBB95E000D61AF /* Build configuration list for PBXNativeTarget "ECCreditCardTest" */;
+			buildPhases = (
+				F00F26921CBBB95E000D61AF /* Sources */,
+				F00F26931CBBB95E000D61AF /* Frameworks */,
+				F00F26941CBBB95E000D61AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECCreditCardTest;
+			productName = ECCreditCardTest;
+			productReference = F00F26961CBBB95E000D61AF /* ECCreditCardTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F00F26AE1CBBB95E000D61AF /* ECCreditCardTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00F26BB1CBBB95E000D61AF /* Build configuration list for PBXNativeTarget "ECCreditCardTestTests" */;
+			buildPhases = (
+				F00F26AB1CBBB95E000D61AF /* Sources */,
+				F00F26AC1CBBB95E000D61AF /* Frameworks */,
+				F00F26AD1CBBB95E000D61AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00F26B11CBBB95E000D61AF /* PBXTargetDependency */,
+			);
+			name = ECCreditCardTestTests;
+			productName = ECCreditCardTestTests;
+			productReference = F00F26AF1CBBB95E000D61AF /* ECCreditCardTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F00F268E1CBBB95E000D61AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Trevor Doodes";
+				TargetAttributes = {
+					F00F26951CBBB95E000D61AF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F00F26AE1CBBB95E000D61AF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F00F26951CBBB95E000D61AF;
+					};
+				};
+			};
+			buildConfigurationList = F00F26911CBBB95E000D61AF /* Build configuration list for PBXProject "ECCreditCardTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F00F268D1CBBB95E000D61AF;
+			productRefGroup = F00F26971CBBB95E000D61AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F00F26951CBBB95E000D61AF /* ECCreditCardTest */,
+				F00F26AE1CBBB95E000D61AF /* ECCreditCardTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F00F26941CBBB95E000D61AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00F26A91CBBB95E000D61AF /* LaunchScreen.storyboard in Resources */,
+				F00F26A61CBBB95E000D61AF /* Assets.xcassets in Resources */,
+				F00F26A41CBBB95E000D61AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00F26AD1CBBB95E000D61AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F00F26921CBBB95E000D61AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00F26A11CBBB95E000D61AF /* ViewController.m in Sources */,
+				F00F269E1CBBB95E000D61AF /* AppDelegate.m in Sources */,
+				F00F269B1CBBB95E000D61AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00F26AB1CBBB95E000D61AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00F26B41CBBB95E000D61AF /* ECCreditCardTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F00F26B11CBBB95E000D61AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F00F26951CBBB95E000D61AF /* ECCreditCardTest */;
+			targetProxy = F00F26B01CBBB95E000D61AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F00F26A21CBBB95E000D61AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F00F26A31CBBB95E000D61AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F00F26A71CBBB95E000D61AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F00F26A81CBBB95E000D61AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F00F26B61CBBB95E000D61AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F00F26B71CBBB95E000D61AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F00F26B91CBBB95E000D61AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ECCreditCardTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IronworksMediaLimited.ECCreditCardTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F00F26BA1CBBB95E000D61AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ECCreditCardTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IronworksMediaLimited.ECCreditCardTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F00F26BC1CBBB95E000D61AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ECCreditCardTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IronworksMediaLimited.ECCreditCardTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECCreditCardTest.app/ECCreditCardTest";
+			};
+			name = Debug;
+		};
+		F00F26BD1CBBB95E000D61AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ECCreditCardTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IronworksMediaLimited.ECCreditCardTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECCreditCardTest.app/ECCreditCardTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00F26911CBBB95E000D61AF /* Build configuration list for PBXProject "ECCreditCardTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00F26B61CBBB95E000D61AF /* Debug */,
+				F00F26B71CBBB95E000D61AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00F26B81CBBB95E000D61AF /* Build configuration list for PBXNativeTarget "ECCreditCardTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00F26B91CBBB95E000D61AF /* Debug */,
+				F00F26BA1CBBB95E000D61AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F00F26BB1CBBB95E000D61AF /* Build configuration list for PBXNativeTarget "ECCreditCardTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00F26BC1CBBB95E000D61AF /* Debug */,
+				F00F26BD1CBBB95E000D61AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F00F268E1CBBB95E000D61AF /* Project object */;
+}
