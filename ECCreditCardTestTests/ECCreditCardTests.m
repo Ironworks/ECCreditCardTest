@@ -110,4 +110,63 @@
     
 }
 
+- (void)testForValidCard {
+    
+    ECCreditCard * validCard = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"5555555555554444"];
+    NSError *error; 
+    BOOL isValid = [validCard isValidWithError:&error];
+    
+    XCTAssertTrue(isValid, @"Should be a valid Card");
+}
+
+- (void)testInvalidLengthVisaReturnsError {
+    
+    ECCreditCard *invalidLengthVisa = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"401288888888181"];
+    NSError *error;
+    [invalidLengthVisa isValidWithError:&error];
+    XCTAssertEqualObjects(error.localizedDescription, @"Invalid account length", @"Should return correct error message");
+    XCTAssertTrue(error.code == ECErrorCodeInvalidLength, @"Should receive 1001 error code");
+    
+}
+
+- (void)testInvalidLengthAmericanExpressReturnsError {
+    
+    ECCreditCard *invalidLengthAmericanExpress = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"3782822463100051"];
+    NSError *error;
+    [invalidLengthAmericanExpress isValidWithError:&error];
+    XCTAssertEqualObjects(error.localizedDescription, @"Invalid account length", @"Should return correct error message");
+    XCTAssertTrue(error.code == ECErrorCodeInvalidLength, @"Should receive 1001 error code");
+    
+}
+
+- (void)testInvalidLengthMasterCardReturnsError {
+    
+    ECCreditCard *invalidLengthMasterCard = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"555555555555444"];
+    NSError *error;
+    [invalidLengthMasterCard isValidWithError:&error];
+    XCTAssertEqualObjects(error.localizedDescription, @"Invalid account length", @"Should return correct error message");
+    XCTAssertTrue(error.code == ECErrorCodeInvalidLength, @"Should receive 1001 error code");
+    
+}
+
+- (void)testInvalidLengthDiscoverReturnsError {
+    
+    ECCreditCard *invalidLengthDiscover = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"601200099013424"];
+    NSError *error;
+    [invalidLengthDiscover isValidWithError:&error];
+    XCTAssertEqualObjects(error.localizedDescription, @"Invalid account length", @"Should return correct error message");
+    XCTAssertTrue(error.code == ECErrorCodeInvalidLength, @"Should receive 1001 error code");
+    
+}
+
+- (void)testInvalidCheckDigit {
+    
+    ECCreditCard * invalidCheckDigit = [[ECCreditCard alloc] initWithCreditCardAccountNumber:@"5555555555554443"];
+    NSError *error;
+    [invalidCheckDigit isValidWithError:&error];
+    
+    XCTAssertEqualObjects(error.localizedDescription, @"Invalid account check digit", @"Should return correct error message");
+    XCTAssertTrue(error.code == ECErrorCodeInvalidCheckDigit, @"Should receive 1002 error code");
+}
+
 @end

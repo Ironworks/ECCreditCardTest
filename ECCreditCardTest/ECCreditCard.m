@@ -38,7 +38,17 @@ typedef NS_ENUM(NSUInteger, ECCreditCardIssuer) {
     ECCreditCardIssuerUnknown = 0
 };
 
-
+/**
+ *  Constants
+ */
+static NSString * const kErrorDomain = @"uk.co.ironworksmedialimited";
+static const NSUInteger kAmexLength = 15;
+static const NSUInteger kDiscoverShortLength = 16;
+static const NSUInteger kDiscoverLongLength = 19;
+static const NSUInteger kMasterCardLength = 16;
+static const NSUInteger kVisaShortLength = 13;
+static const NSUInteger kVisaMedLength = 16;
+static const NSUInteger kVisaLongLength = 19;
 
 @interface ECCreditCard ()
 
@@ -50,6 +60,7 @@ typedef NS_ENUM(NSUInteger, ECCreditCardIssuer) {
 
 
 #pragma mark - Private Methods
+
 - (NSUInteger) issuerNumberFirstNumberOfDigits:(NSUInteger)digits {
     
     NSString *issuerPrefix = [self.accountNumber substringWithRange:NSMakeRange(0, digits)];
@@ -164,6 +175,80 @@ typedef NS_ENUM(NSUInteger, ECCreditCardIssuer) {
     return issuer;
 }
 
+- (BOOL)isValidLength {
+    
+    switch (self.issuer) {
+        case ECCreditCardIssuerAmericanExpress:
+        {
+            if (self.accountNumber.length == kAmexLength) {
+                return YES;
+            } else {
+                return NO;
+            }
+        }
+            break;
+        
+        case ECCreditCardIssuerDiscoverCard:
+        {
+            if (self.accountNumber.length == kDiscoverShortLength ||
+                self.accountNumber.length == kDiscoverLongLength) {
+                return YES;
+            } else {
+                return NO;
+            }
+        }
+            
+        case ECCreditCardIssuerMasterCard:
+        case ECCreditCardIssuerMasterCardType2:
+        {
+            if (self.accountNumber.length == kMasterCardLength) {
+                return YES;
+            } else {
+                return NO;
+            }
+        }
+            
+        case ECCreditCardIssuerVisa:
+        {
+            if (self.accountNumber.length == kVisaShortLength ||
+                self.accountNumber.length == kVisaMedLength ||
+                self.accountNumber.length == kVisaLongLength) {
+                return YES;
+            } else {
+                return NO;
+            }
+        }
+        default:
+            return NO; //Assumption: Unknown provider is always an invalid length
+            break;
+    }
+}
+
+
+
+-(BOOL)isValidCheckDigit {
+    
+    //Luhn Algorithm
+    BOOL isOdd = YES;
+    int oddSum = 0;
+    int evenSum = 0;
+    
+    for (NSInteger i = self.accountNumber.length - 1; i >= 0; i--) {
+        
+        NSInteger digit = [[self.accountNumber substringWithRange:NSMakeRange(i, 1)] intValue];
+        
+        if (isOdd)
+            oddSum += digit;
+        else
+            evenSum += digit/5 + (2 * digit) % 10;
+        
+        isOdd = !isOdd;
+    }
+    
+    return ((oddSum + evenSum) % 10 == 0);
+
+}
+
 #pragma mark - Public Methods
 - (instancetype) initWithCreditCardAccountNumber:(NSString *)accountNumber {
     
@@ -175,6 +260,28 @@ typedef NS_ENUM(NSUInteger, ECCreditCardIssuer) {
     }
     
     return self;
+}
+
+- (BOOL)isValidWithError:(NSError **)error {
+    
+    if ([self isValidLength]) {
+        if ([self isValidCheckDigit]) {
+            return YES;
+        } else {
+            NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+            errorDetail[NSLocalizedDescriptionKey] = @"Invalid account check digit";
+            *error = [NSError errorWithDomain:kErrorDomain code:ECErrorCodeInvalidCheckDigit userInfo:errorDetail];
+            return NO;
+        }
+    } else {
+        NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+        errorDetail[NSLocalizedDescriptionKey] = @"Invalid account length";
+        *error = [NSError errorWithDomain:kErrorDomain code:ECErrorCodeInvalidLength userInfo:errorDetail];
+        return NO;
+
+    }
+    
+    return YES;
 }
 
 #pragma mark - Accessor Methods
