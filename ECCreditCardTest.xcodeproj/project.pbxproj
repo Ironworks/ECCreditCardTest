@@ -13,7 +13,6 @@
 		F00F26A41CBBB95E000D61AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A21CBBB95E000D61AF /* Main.storyboard */; };
 		F00F26A61CBBB95E000D61AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A51CBBB95E000D61AF /* Assets.xcassets */; };
 		F00F26A91CBBB95E000D61AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00F26A71CBBB95E000D61AF /* LaunchScreen.storyboard */; };
-		F00F26B41CBBB95E000D61AF /* ECCreditCardTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 		F00F26A81CBBB95E000D61AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F00F26AA1CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F00F26AF1CBBB95E000D61AF /* ECCreditCardTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECCreditCardTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECCreditCardTestTests.m; sourceTree = "<group>"; };
 		F00F26B51CBBB95E000D61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 		F00F26B21CBBB95E000D61AF /* ECCreditCardTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				F00F26B31CBBB95E000D61AF /* ECCreditCardTestTests.m */,
 				F00F26B51CBBB95E000D61AF /* Info.plist */,
 			);
 			path = ECCreditCardTestTests;
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00F26B41CBBB95E000D61AF /* ECCreditCardTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
